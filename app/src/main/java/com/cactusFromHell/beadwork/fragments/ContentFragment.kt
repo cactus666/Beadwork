@@ -1,5 +1,6 @@
 package com.cactusFromHell.beadwork.fragments
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -11,6 +12,8 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.NavController
 import androidx.navigation.Navigation
 import com.cactusFromHell.beadwork.R
+
+
 
 class ContentFragment: Fragment(), View.OnClickListener {
 
@@ -28,6 +31,7 @@ class ContentFragment: Fragment(), View.OnClickListener {
         webView = view.findViewById(R.id.webView)
         toolbar_title = view.findViewById(R.id.toolbar_title)
         view.findViewById<ImageView>(R.id.arrow_back).setOnClickListener(this)
+        view.findViewById<ImageView>(R.id.share).setOnClickListener(this)
         navController = Navigation.findNavController(view)
         loadContent()
     }
@@ -46,7 +50,13 @@ class ContentFragment: Fragment(), View.OnClickListener {
     }
 
     private fun share() {
-        // share in vk
+        val sharingIntent = Intent(android.content.Intent.ACTION_SEND)
+        sharingIntent.type = "text/plain"
+
+        val shareBody = "Here is the share content body"
+        sharingIntent.putExtra(android.content.Intent.EXTRA_SUBJECT, "Subject Here")
+        sharingIntent.putExtra(android.content.Intent.EXTRA_TEXT, shareBody)
+        startActivity(Intent.createChooser(sharingIntent, "Share via"))
     }
 
 }
