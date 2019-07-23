@@ -23,8 +23,7 @@ class ListFragment: Fragment() {
             arrayOf(context!!.getString(R.string.item_3), context!!.getString(R.string.item_3_url)),
             arrayOf(context!!.getString(R.string.item_4), context!!.getString(R.string.item_4_url)),
             arrayOf(context!!.getString(R.string.item_5), context!!.getString(R.string.item_5_url)),
-            arrayOf(context!!.getString(R.string.item_6), context!!.getString(R.string.item_6_url)),
-            arrayOf(context!!.getString(R.string.item_7), context!!.getString(R.string.item_7_url))
+            arrayOf(context!!.getString(R.string.item_6), context!!.getString(R.string.item_6_url))
         )
     }
 

@@ -3,13 +3,12 @@
     <string name="name_title">Поделки из бисера</string>
     <string name="next">Продолжить</string>
 
-    <string name="item_1">Корзинка из бисера для кукол</string>
-    <string name="item_2">Как сделать из бисера вазу</string>
-    <string name="item_3">Как сделать из бисера вазу</string>
-    <string name="item_4">Как сделать из бисера вазу</string>
-    <string name="item_5">Как сделать из бисера вазу</string>
-    <string name="item_6">Как сделать из бисера вазу</string>
-    <string name="item_7">Как сделать из бисера вазу</string>
+    <string name="item_1">Галстук из бисера</string>
+    <string name="item_2">Мандала из бисера</string>
+    <string name="item_3">Паук из бисера</string>
+    <string name="item_4">Заколка с цветами из бисера</string>
+    <string name="item_5">Декоративный бантик</string>
+    <string name="item_6">Брошь губы из бисера</string>
 
     <string name="item_1_url">file:///android_asset/html/item_1.html</string>
     <string name="item_2_url">file:///android_asset/html/item_2.html</string>
@@ -17,6 +16,5 @@
     <string name="item_4_url">file:///android_asset/html/item_4.html</string>
     <string name="item_5_url">file:///android_asset/html/item_5.html</string>
     <string name="item_6_url">file:///android_asset/html/item_6.html</string>
-    <string name="item_7_url">file:///android_asset/html/item_7.html</string>
 
 </resources>
